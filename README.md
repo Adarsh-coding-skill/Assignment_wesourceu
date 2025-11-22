@@ -1,58 +1,59 @@
-Features
+✨ Features
 
- Upload any PDF document
+📄 Upload any PDF document
 
-AI checks the PDF against user-defined rules
+🧠 AI checks the PDF against user-defined rules
 
-Returns structured JSON (status, evidence, reasoning, confidence)
+📊 Returns structured JSON (status, evidence, reasoning, confidence)
 
- Fully built frontend (React + Material UI)
+🎨 Fully built frontend using React + Material UI
 
- Backend using Node.js + Express
+⚙️ Backend using Node.js + Express
 
- Groq LLM API integration
+🤖 Groq LLM API integration
 
- Clean UI with rule inputs and result handling 
+🧼 Clean UI with rule inputs and result table
 
+📂 Project Structure
+/frontend
+   ├── src
+   ├── public
+   └── package.json
 
- /frontend
-  ├── src
-  ├── public
-  ├── package.json
-      
 /backend
-  ├── index.js
-  ├── package.json
-  ├── .env (NOT included in GitHub)
+   ├── index.js
+   ├── package.json
+   └── .env   (NOT included in GitHub)
 
-
-
-  Frontend Setup
-  cd frontend
+🖥️ Frontend Setup
+cd frontend
 npm install
 
-Start the React app
+🚀 Start React App
 npm run dev
+
+
+Runs on:
 👉 http://localhost:5173
 
-Backend Setup
+⚙️ Backend Setup
 cd backend
 npm install
 
-Start the backend server
+▶ Start Backend Server
 node index.js
+
+
+Runs on:
 👉 http://localhost:5000
 
 🔌 API Endpoint
 POST /check-pdf
-FormData fields:
-
+📤 FormData Fields
 Field	Type	Description
 pdf	File	Uploaded PDF file
-rules	JSON array	3+ rules to check against
-
-Returns (example):
-
+rules	JSON array	Three or more rules to validate
+📥 Sample Response
 [
   {
     "rule": "Rule text...",
@@ -72,7 +73,7 @@ Material UI
 
 Fetch API
 
-File upload (drag-drop + preview)
+Drag-drop file upload
 
 Backend
 
@@ -80,7 +81,7 @@ Node.js
 
 Express
 
-Multer (for PDF upload)
+Multer
 
 pdf-parse-fixed
 
