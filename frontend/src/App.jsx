@@ -57,7 +57,7 @@ export default function App() {
     formData.append("rules", JSON.stringify(rules));
 
     try {
-      const response = await fetch("http://localhost:5000/check-pdf", {
+      const response = await fetch("https://assignment-wesourceu-backend.onrender.com/check-pdf", {
         method: "POST",
         body: formData,
       });
